@@ -1,0 +1,10 @@
+Package: com.fortysixandtwo.wink
+Name: Wink
+Depends: firmware (>=7.0), mobilesubstrate, applist
+Version: 0.9~beta6
+Architecture: iphoneos-arm
+Description: Quickly show/hide the status bar.
+Depiction: http://repo.fortysixandtwo.com/x/com.fortysixandtwo.wink
+Maintainer: magn2o
+Author: magn2o
+Section: Tweaks

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>You will probably have to respring after toggling this.</string>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSSwitchCell</string>
+                        <key>label</key>
+                        <string>Enabled</string>
+                        <key>id</key>
+                        <string>isEnabled</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>isEnabled</string>
+                        <key>default</key>
+                        <true/>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Animation Style</string>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSLinkListCell</string>
+                        <key>label</key>
+                        <string>Appear</string>
+                        <key>id</key>
+                        <string>transitionInStyle</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>transitionInStyle</string>
+                        <key>default</key>
+                        <real>5</real>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                        <key>detail</key>
+                        <string>PSListItemsController</string>
+                        <key>validTitles</key>
+                        <array>
+                                <string>None</string>
+                                <string>Flip From Left</string>
+				<string>Flip From Right</string>
+                                <string>Curl Up</string>
+                                <string>Curl Down</string>
+                                <string>Fade</string>
+                                <string>Flip From Top</string>
+                                <string>Flip From Bottom</string>
+                        </array>
+                        <key>validValues</key>
+                        <array>
+                                <real>0</real>
+                                <real>1</real>
+                                <real>2</real>
+                                <real>3</real>
+                                <real>4</real>
+                                <real>5</real>
+                                <real>6</real>
+                                <real>7</real>
+                        </array>
+                </dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSLinkListCell</string>
+                        <key>label</key>
+                        <string>Disappear</string>
+                        <key>id</key>
+                        <string>transitionOutStyle</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>transitionOutStyle</string>
+                        <key>default</key>
+                        <real>5</real>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                        <key>detail</key>
+                        <string>PSListItemsController</string>
+                        <key>validTitles</key>
+                        <array>
+                                <string>None</string>
+                                <string>Flip From Left</string>
+				<string>Flip From Right</string>
+                                <string>Curl Up</string>
+                                <string>Curl Down</string>
+                                <string>Fade</string>
+                                <string>Flip From Top</string>
+                                <string>Flip From Bottom</string>
+                        </array>
+                        <key>validValues</key>
+                        <array>
+                                <real>0</real>
+                                <real>1</real>
+                                <real>2</real>
+                                <real>3</real>
+                                <real>4</real>
+                                <real>5</real>
+                                <real>6</real>
+                                <real>7</real>
+                        </array>
+                </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Duration</string>
+			<key>footerText</key>
+			<string>Adjust this value to modify how long the status bar remains visible (in seconds).</string> 
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSSliderCell</string>
+                        <key>label</key>
+                        <string>Duration</string>
+                        <key>id</key>
+                        <string>displayDuration</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>displayDuration</string>
+                        <key>default</key>
+                        <real>3</real>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                        <key>min</key>
+                        <real>0</real>
+                        <key>max</key>
+                        <real>10</real>
+                        <key>showValue</key>
+                        <true/>
+<!-- //
+                        <key>leftImage</key>
+                        <string>Alpha</string>
+// -->
+                </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Appearance</string>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSSwitchCell</string>
+                        <key>label</key>
+                        <string>Always Show Clock</string>
+                        <key>id</key>
+                        <string>alwaysShowTime</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>alwaysShowTime</string>
+                        <key>default</key>
+                        <false/>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Blacklist</string>
+			<key>footerText</key>
+			<string>Wink will be disabled within the applications selected. Please note, you must respring if changing SpringBoard setting.</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSSwitchCell</string>
+                        <key>label</key>
+                        <string>SpringBoard</string>
+                        <key>id</key>
+                        <string>blacklistSpringBoard</string>
+                        <key>defaults</key>
+                        <string>com.fortysixandtwo.wink</string>
+                        <key>key</key>
+                        <string>blacklistSpringBoard</string>
+                        <key>default</key>
+                        <false/>
+                        <key>PostNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                </dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSLinkCell</string>
+                        <key>bundle</key>
+                        <string>AppList</string>
+                        <key>isController</key>
+                        <string>1</string>
+                        <key>label</key>
+                        <string>Applications</string>
+                        <key>ALSettingsPath</key>
+                        <string>/var/mobile/Library/Preferences/com.fortysixandtwo.wink.plist</string>
+                        <key>ALSettingsKeyPrefix</key>
+                        <string>Blacklist-</string>
+                        <key>ALChangeNotification</key>
+                        <string>com.fortysixandtwo.wink/settingschanged</string>
+                        <key>ALAllowsSelection</key>
+                        <true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Permanent Visibility</string>
+			<key>footerText</key>
+			<string>Enabled items will remain visible at all times.</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+                <dict>
+                        <key>cell</key>
+                        <string>PSLinkCell</string>
+                        <key>detail</key>
+                        <string>WinkItemsListController</string>
+                        <key>isController</key>
+                        <true/>
+                        <key>label</key>
+                        <string>Items</string>
+                </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Author</string>
+			<key>footerText</key>
+			<string>© 2014 fortysixandtwo, ltd.</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>@magn2o</string>
+			<key>action</key>
+			<string>launchTwitter:</string>
+			<key>icon</key>
+			<string>Twitter.png</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Wink</string>
+</dict>
+</plist>
